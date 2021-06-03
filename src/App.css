@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap');
+
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+  font-family:Poppins;
+  color:rgb(255, 255, 255)
+}
+body{
+  background-color: rgb(51, 51, 51);
+  
+}
+.infoBox_container{
+  display:flex;
+  justify-content: space-between;
+ 
+ 
+}
+.App{
+  display: flex;
+  justify-content: space-evenly;
+
+  margin-top: 20px;
+}
+.left_container{
+  
+    width:60%;
+}
+.right_container{
+  width:30%;
+}
+
+
+
+@media(max-width:1330px){
+  .App{
+    flex-direction:column;
+    justify-content: center;
+  }
+
+  .left_container{
+    width: 100%;
+    padding:20px;
+}
+  .right_container{
+ padding:20px;
+  width: 100%;
+  
+  
+   
+  
+  }
+}
+@media (max-width: 907px){
+  .infoBox_container{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+   
+  }
+ 
+  h2{
+    font-size: 17px;
+  }
+  .left_container .MuiSelect-root{
+      font-size: 10px;
+      
+  }
+  .left_container h1{
+    font-size: 22px;
+}
+.header h1{
+  text-align: center;
+  padding-top: 10px;
+  
+}
+}
